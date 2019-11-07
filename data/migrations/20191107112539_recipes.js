@@ -26,7 +26,7 @@ exports.up = function(knex) {
         .inTable('ingredients')
         .onDelete('RESTRICT')
         .onUpdate('CASCADE');
-      tbl.float('qauntity', 128).notNullable();
+      tbl.string('quantity', 128).notNullable();
     })
     .createTable('steps', tbl => {
       tbl.increments();

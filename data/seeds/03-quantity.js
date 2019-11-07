@@ -5,7 +5,7 @@ exports.seed = function(knex) {
     .then(function() {
       // Inserts seed entries
       return knex('quantity').insert([
-        { recipe_id: 1, ingredient_id: 9, quantity: '3/4 cup' },
+        { recipe_id: 1, ingredient_id: 10, quantity: '3/4 cup' },
         {
           recipe_id: 1,
           ingredient_id: 1,
@@ -18,7 +18,7 @@ exports.seed = function(knex) {
         { recipe_id: 2, ingredient_id: 6, quantity: '1/2 teaspoon' },
         { recipe_id: 2, ingredient_id: 7, quantity: '1/2 teaspoon' },
         { recipe_id: 2, ingredient_id: 8, quantity: '1/2 teaspoon' },
-        { recipe_id: 2, ingredient_id: 10, quantity: '1 slice' }
+        { recipe_id: 2, ingredient_id: 9, quantity: '1 slice' }
       ]);
     });
 };
