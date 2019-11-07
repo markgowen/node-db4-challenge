@@ -14,7 +14,7 @@ exports.up = function(knex) {
         .integer('recipe_id')
         .notNullable()
         .unsigned()
-        .references('recipe_id')
+        .references('id')
         .inTable('recipes')
         .onDelete('RESTRICT')
         .onUpdate('CASCADE');
@@ -22,7 +22,7 @@ exports.up = function(knex) {
         .integer('ingredient_id')
         .notNullable()
         .unsigned()
-        .references('ingredient_id')
+        .references('id')
         .inTable('ingredients')
         .onDelete('RESTRICT')
         .onUpdate('CASCADE');
@@ -34,7 +34,7 @@ exports.up = function(knex) {
         .integer('recipe_id')
         .notNullable()
         .unsigned()
-        .references('recipe_id')
+        .references('id')
         .inTable('recipes')
         .onDelete('RESTRICT')
         .onUpdate('CASCADE');
