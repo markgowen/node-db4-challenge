@@ -12,7 +12,7 @@ const getRecipes = () => {
 
 const getShoppingList = recipe_id => {
   return db
-    .select('ingredient_name', 'quantity.*')
+    .select('ingredient_name', 'quantity')
     .from('quantity')
     .join('ingredients')
     .where({ recipe_id });
